@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  text = 'Soy un simple text inocente';
 
-  constructor() {}
-
+  onChangeText = () => {
+    this.text = 'Ahora he cambiado';
+  };
 }
